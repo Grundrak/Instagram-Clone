@@ -8,6 +8,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 /* Sidebar css */
 .sidebar {
@@ -30,7 +31,7 @@ body {
 .icon_name {
   font-size: 12px;
   font-weight: normal;
-  padding-left: 8px;
+  padding-left: 12px;
 }
 .sdb-itm {
   display: flex;
@@ -60,7 +61,7 @@ body {
   position: absolute;
   bottom: 23px;
   padding-bottom: 25px;
-  width: 262px;
+  width: 200px;
 }
 .sidebar::after {
   content: "";
@@ -70,18 +71,18 @@ body {
   width: 1px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.24);
-  z-index: -1;
 }
 .ll img {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   object-fit: cover;
+  padding-right: 12px;
 }
 
 /* head of section  */
 
-.main-content {
+main {
   margin-left: calc(230px + 180px);
   margin-right: 220px;
   margin-bottom: 30px;
@@ -100,13 +101,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 30px;
 }
 .Head-section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding-top: 25px;
 }
-
+.head2 {
+  padding-left: 30px;
+}
 .info-profil {
   display: flex;
   height: 25px;
@@ -169,28 +172,113 @@ body {
 .new {
   background-color: #121212;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  border: 2px solid rgba(255, 255, 255, 0.389);
-  justify-content: center;
+  width: 61px;
+  height: 61px;
+  /* border: 2px solid rgba(255, 255, 255, 0.389); */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
-  padding: 10px;
+
+  cursor: pointer;
+}
+.crcl {
+  background-color: #000000;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  border: 2px solid rgba(255, 255, 255, 0.389);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 .new svg path {
-  fill: rgba(154, 152, 152, 0.566); 
+  fill: rgba(154, 152, 152, 0.566);
+}
+.new2 {
+  padding: 8px 25px;
+  font-size: 12px;
+}
+.cntn {
+  width: 120px;
+  height: auto;
+  /* text-align: center; */
+  padding-bottom: 30px;
+  margin-left: 150px;
+}
+/* post and corps of page */
+
+.high-container {
+  /* padding: 10px; */
+  height: 700px;
+  position: relative;
+  min-height: 20px;
+}
+.high-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 70%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.24);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.butt-nm button {
+  font-size: 12px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+.butt-nm svg {
+  cursor: pointer;
+}
+.butt-nm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 20px;
+}
+.butt-nm::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 320px;
+  width: 10%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.478);
+  transition: left 0.3s ease;
+}
+.posts img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.photo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.pic-container {
+  display: none;
+}
+.pic-container.active {
+  display: block;
 }
 
 /* footer from here */
-.footer {
-  position: relative;
-  left: 140px;
+footer {
+  /* margin-top: auto; */
   padding: 20px;
   text-align: center;
-  margin: 20px auto;
+  margin-left: calc(230px + 180px);
+  margin-right: 200px;
+  margin-bottom: 150px;
 }
 
 .footer-links {
@@ -207,4 +295,11 @@ body {
 .footer-meta {
   font-size: 10px;
   color: #ffffff74;
+}
+#Dropdown {
+  margin: 0 8px;
+  background-color: transparent;
+  color: #ffffff74;
+  border: 1px solid transparent;
+  font-size: 10px;
 }

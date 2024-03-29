@@ -174,7 +174,6 @@ main {
   border-radius: 50%;
   width: 61px;
   height: 61px;
-  /* border: 2px solid rgba(255, 255, 255, 0.389); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +201,6 @@ main {
 .cntn {
   width: 120px;
   height: auto;
-  /* text-align: center; */
   padding-bottom: 30px;
   margin-left: 150px;
 }
